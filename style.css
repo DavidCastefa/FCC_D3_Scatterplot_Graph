@@ -1,0 +1,79 @@
+*{
+  font-family: roboto;
+}
+
+body{
+  background-color: rgb(124, 204, 135);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+svg{
+  background-color: rgb(236, 250, 238);
+  border-radius: 5px;
+}
+
+#title-block {
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 3px;
+  color: black;
+  background-color: white;
+  padding: 1px 10px;
+  text-align: center;
+  top: 5%;
+}
+
+@media screen and (min-width: 601px) {
+  #title {
+    font-size: 1.2rem;
+  }
+  #subtitle {
+    font-size: .9rem;
+  }
+  #data-source {
+    font-size: .7rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #title {
+    font-size: .9rem;
+  }
+  #subtitle {
+    font-size: .7rem;
+  }
+  #data-source {
+    font-size: .5rem;
+  }
+}
+
+.dot:hover {fill: blueviolet}
+
+#tooltip {
+  position: absolute;
+  border: 1px solid grey;
+  border-radius: 3px;
+  color: black;
+  background-color: rgb(241, 248, 242);
+  padding: 5px;
+  font-size: .7rem;
+}
+
+#data-source {
+  padding: 2px 5px;
+  position: relative;
+  color: rgb(56, 56, 56);
+  top: -18px;
+}
+
+#signature {
+  padding: 2px 5px;
+  position: relative;
+  color: rgb(56, 56, 56);
+  background-color:  rgb(224, 250, 228);
+  top: 5%;
+  font-size: .8rem;
+}
